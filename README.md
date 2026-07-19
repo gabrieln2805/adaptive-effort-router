@@ -124,25 +124,6 @@ adaptive-effort-router/
 
 This is a reference implementation, not a production gateway: no auth on the proxy's own endpoints, no retries/backoff on transient upstream errors, no persistent storage for observability events (in-memory only — restart loses history), and the complexity heuristic is intentionally simple (character length + tool count) rather than a learned classifier. Swap `ObservabilityTracker.record()` for a real metrics sink and add a durable request log before running this in front of real traffic.
 
-## Publishing this to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: adaptive effort router"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/adaptive-effort-router.git
-git push -u origin main
-```
-
-Before publishing:
-- Update `YOUR_USERNAME` in `package.json` (`repository.url`) and in the README badge URLs above.
-- Update the copyright line in `LICENSE`.
-- Double check `.env` is not staged (`git status` — it should be ignored; `.env.example` is fine to commit, `.env` is not).
-
-## Contributing
-
-Issues and PRs welcome. Please run `npm test` before submitting a PR, and add a test case in `test/` for any new routing or pricing behavior.
 
 ## License
 
