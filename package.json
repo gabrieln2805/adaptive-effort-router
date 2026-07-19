@@ -1,0 +1,38 @@
+{
+  "name": "sonnet5-adaptive-effort-router",
+  "version": "1.0.0",
+  "description": "Complexity-aware proxy that sets effort level dynamically for Claude Sonnet 5, routing the hardest blocking tasks to Claude Fable 5, with cost observability and a tokenizer test harness.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/routing.test.js && node test/pricing.test.js",
+    "test:tokenizer": "node scripts/tokenizer-comparison.js",
+    "test:routing": "node test/routing.test.js",
+    "test:pricing": "node test/pricing.test.js"
+  },
+  "keywords": [
+    "anthropic",
+    "claude",
+    "claude-api",
+    "llm-router",
+    "llm-proxy",
+    "cost-optimization",
+    "sonnet-5",
+    "fable-5"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/adaptive-effort-router.git"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
