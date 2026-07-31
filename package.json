@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/adaptive-effort-router.git"
+    "url": "git+https://github.com/gabrieln2805/adaptive-effort-router.git"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
