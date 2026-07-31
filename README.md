@@ -1,6 +1,6 @@
 # Sonnet 5 Adaptive Effort Router
 
-![tests](https://github.com/YOUR_USERNAME/adaptive-effort-router/actions/workflows/test.yml/badge.svg)
+![tests](https://github.com/gabrieln2805/adaptive-effort-router/actions/workflows/test.yml/badge.svg)
 ![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 
@@ -41,7 +41,7 @@ A proxy in front of the Claude Messages API that:
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/adaptive-effort-router.git
+git clone https://github.com/gabrieln2805/adaptive-effort-router.git
 cd adaptive-effort-router
 npm install
 ```
